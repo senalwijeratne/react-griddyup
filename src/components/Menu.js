@@ -2,10 +2,10 @@ import React from "react"
 
 function Menu() {
   return (
-    <nav class="menu">
+    <nav className="menu">
       <button aria-expanded="false" aria-controls="menu-list">
-        <span class="open">☰</span>
-        <span class="close">×</span>
+        <span className="open">☰</span>
+        <span className="close">×</span>
         Menu
       </button>
       <ul id="menu-list">

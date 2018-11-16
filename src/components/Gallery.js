@@ -2,7 +2,7 @@ import React from "react"
 
 function Gallery() {
   return (
-    <section class="gallery">
+    <section className="gallery">
       <h2>Instant Grams</h2>
       <img src="https://source.unsplash.com/random/201x201" alt="" />
       <img src="https://source.unsplash.com/random/202x202" alt="" />
