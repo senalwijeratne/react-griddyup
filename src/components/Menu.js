@@ -1,9 +1,22 @@
-import React from "react"
+import React from "react";
+
+function toggleNav({ target }) {
+  console.log(target.attributes["aria-expanded"]);
+
+  let expanded = target.attributes["aria-expanded"] === true ? true : false;
+  target.setAttribute("aria-expanded", !expanded);
+
+  console.log(target.attributes["aria-expanded"]);
+}
 
 function Menu() {
   return (
     <nav className="menu">
-      <button aria-expanded="false" aria-controls="menu-list">
+      <button
+        aria-expanded="false"
+        aria-controls="menu-list"
+        onClick={toggleNav}
+      >
         <span className="open">☰</span>
         <span className="close">×</span>
         Menu
@@ -26,7 +39,7 @@ function Menu() {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Menu
+export default Menu;

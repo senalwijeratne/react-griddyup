@@ -1,5 +1,5 @@
 :root {
-  --yellow: #ffc600;
+  --primary: #ffc600;
   --black: #272727;
 }
 
@@ -54,7 +54,7 @@ h6 {
   border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   font-size: 35px;
-  background-color: var(--yellow); /* best colour */
+  background-color: var(--primary); /* best colour */
 }
 
 .item p {
@@ -66,7 +66,7 @@ body {
 }
 
 button {
-  background: var(--yellow);
+  background: var(--primary);
   border: 0;
   padding: 10px 20px;
 }
@@ -105,12 +105,12 @@ img {
 }
 
 .hero > * {
-  background: var(--yellow);
+  background: var(--primary);
   padding: 5px;
 }
 
 .cta {
-  background: var(--yellow);
+  background: var(--primary);
   display: grid;
   align-items: center;
   justify-items: center;
@@ -146,7 +146,7 @@ img {
 }
 
 .menu a {
-  background: var(--yellow);
+  background: var(--primary);
   display: block;
   text-decoration: none;
   text-align: center;
@@ -169,7 +169,7 @@ img {
 .feature {
   background: #fff;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
@@ -217,11 +217,11 @@ img {
   display: block;
   content: "";
   height: 10px;
-  background: linear-gradient(to left, var(--yellow), transparent);
+  background: linear-gradient(to left, var(--primary), transparent);
 }
 
 .gallery h2:after {
-  background: linear-gradient(to right, var(--yellow), transparent);
+  background: linear-gradient(to right, var(--primary), transparent);
 }
 
 /* Responsive styles */
@@ -233,11 +233,14 @@ img {
   }
 
   [aria-controls="menu-list"] {
-    display: block;
+    /* CHANGE BELOW TO "block" WHEN FIXING IT */
+    display: none;
     margin-bottom: 20px;
   }
 
   .menu ul {
+    /* REMOVE BELOW WHEN FIXING IT */
+    display: none;
     max-height: 0;
     overflow: hidden;
     transform: rotateX(90deg);
